@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030175E533E0E9221713D306 /* Pods_CardViewDotaDetails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB63EBFC14018E5E5A45981B /* Pods_CardViewDotaDetails.framework */; };
 		2B1764C52067F23A007D8B64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1764C42067F23A007D8B64 /* AppDelegate.swift */; };
-		2B1764C72067F23A007D8B64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1764C62067F23A007D8B64 /* ViewController.swift */; };
 		2B1764CA2067F23A007D8B64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1764C82067F23A007D8B64 /* Main.storyboard */; };
 		2B1764CC2067F23A007D8B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B1764CB2067F23A007D8B64 /* Assets.xcassets */; };
 		2B1764CF2067F23A007D8B64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1764CD2067F23A007D8B64 /* LaunchScreen.storyboard */; };
+		2B1764D82067FD93007D8B64 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1764D72067FD93007D8B64 /* HomeViewController.swift */; };
+		2B1764DA20681285007D8B64 /* HeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1764D920681285007D8B64 /* HeroViewController.swift */; };
+		2B1764DD20683401007D8B64 /* HeroStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1764DC20683401007D8B64 /* HeroStats.swift */; };
+		2B1764E3206845D7007D8B64 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1764E2206845D7007D8B64 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2B1764C12067F23A007D8B64 /* CardViewDotaDetails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardViewDotaDetails.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B1764C42067F23A007D8B64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B1764C62067F23A007D8B64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2B1764C92067F23A007D8B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B1764CB2067F23A007D8B64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B1764CE2067F23A007D8B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B1764D02067F23A007D8B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B1764D72067FD93007D8B64 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2B1764D920681285007D8B64 /* HeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewController.swift; sourceTree = "<group>"; };
+		2B1764DC20683401007D8B64 /* HeroStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroStats.swift; sourceTree = "<group>"; };
+		2B1764E2206845D7007D8B64 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		A97E324672C1DCCC23B955FF /* Pods-CardViewDotaDetails.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardViewDotaDetails.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardViewDotaDetails/Pods-CardViewDotaDetails.release.xcconfig"; sourceTree = "<group>"; };
+		AF391726D47F746A8E672EB2 /* Pods-CardViewDotaDetails.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardViewDotaDetails.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardViewDotaDetails/Pods-CardViewDotaDetails.debug.xcconfig"; sourceTree = "<group>"; };
+		FB63EBFC14018E5E5A45981B /* Pods_CardViewDotaDetails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardViewDotaDetails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				030175E533E0E9221713D306 /* Pods_CardViewDotaDetails.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1ECA617E6809ED329C88416F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB63EBFC14018E5E5A45981B /* Pods_CardViewDotaDetails.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2B1764B82067F23A007D8B64 = {
 			isa = PBXGroup;
 			children = (
 				2B1764C32067F23A007D8B64 /* CardViewDotaDetails */,
 				2B1764C22067F23A007D8B64 /* Products */,
+				705A6C4DE68F8A318E72F587 /* Pods */,
+				1ECA617E6809ED329C88416F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +75,50 @@
 		2B1764C32067F23A007D8B64 /* CardViewDotaDetails */ = {
 			isa = PBXGroup;
 			children = (
+				2B1764E420684722007D8B64 /* Extensions */,
+				2B1764DB206833D2007D8B64 /* Models */,
+				2B1764D62067FD7E007D8B64 /* Controllers */,
 				2B1764C42067F23A007D8B64 /* AppDelegate.swift */,
-				2B1764C62067F23A007D8B64 /* ViewController.swift */,
 				2B1764C82067F23A007D8B64 /* Main.storyboard */,
 				2B1764CB2067F23A007D8B64 /* Assets.xcassets */,
 				2B1764CD2067F23A007D8B64 /* LaunchScreen.storyboard */,
 				2B1764D02067F23A007D8B64 /* Info.plist */,
 			);
 			path = CardViewDotaDetails;
+			sourceTree = "<group>";
+		};
+		2B1764D62067FD7E007D8B64 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B1764D72067FD93007D8B64 /* HomeViewController.swift */,
+				2B1764D920681285007D8B64 /* HeroViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2B1764DB206833D2007D8B64 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2B1764DC20683401007D8B64 /* HeroStats.swift */,
+				2B1764E2206845D7007D8B64 /* CollectionViewCell.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2B1764E420684722007D8B64 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		705A6C4DE68F8A318E72F587 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF391726D47F746A8E672EB2 /* Pods-CardViewDotaDetails.debug.xcconfig */,
+				A97E324672C1DCCC23B955FF /* Pods-CardViewDotaDetails.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B1764D32067F23A007D8B64 /* Build configuration list for PBXNativeTarget "CardViewDotaDetails" */;
 			buildPhases = (
+				6F950A22900D07A317385177 /* [CP] Check Pods Manifest.lock */,
 				2B1764BD2067F23A007D8B64 /* Sources */,
 				2B1764BE2067F23A007D8B64 /* Frameworks */,
 				2B1764BF2067F23A007D8B64 /* Resources */,
+				720F5A630F5B71437C7EC1E9 /* [CP] Embed Pods Frameworks */,
+				2A67241FF27C925FE4BC6ACB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +191,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A67241FF27C925FE4BC6ACB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardViewDotaDetails/Pods-CardViewDotaDetails-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F950A22900D07A317385177 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CardViewDotaDetails-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		720F5A630F5B71437C7EC1E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CardViewDotaDetails/Pods-CardViewDotaDetails-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardViewDotaDetails/Pods-CardViewDotaDetails-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2B1764BD2067F23A007D8B64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B1764C72067F23A007D8B64 /* ViewController.swift in Sources */,
+				2B1764E3206845D7007D8B64 /* CollectionViewCell.swift in Sources */,
 				2B1764C52067F23A007D8B64 /* AppDelegate.swift in Sources */,
+				2B1764DA20681285007D8B64 /* HeroViewController.swift in Sources */,
+				2B1764D82067FD93007D8B64 /* HomeViewController.swift in Sources */,
+				2B1764DD20683401007D8B64 /* HeroStats.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +391,7 @@
 		};
 		2B1764D42067F23A007D8B64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF391726D47F746A8E672EB2 /* Pods-CardViewDotaDetails.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -281,12 +401,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakaboy.CardViewDotaDetails;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		2B1764D52067F23A007D8B64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A97E324672C1DCCC23B955FF /* Pods-CardViewDotaDetails.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,7 +417,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakaboy.CardViewDotaDetails;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
