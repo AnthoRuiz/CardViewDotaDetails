@@ -60,13 +60,13 @@
                                                         <constraint firstAttribute="height" constant="110" id="hHq-OZ-Xvk"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mage Bane" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHP-iz-Dva">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mage Bane" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHP-iz-Dva">
                                                     <rect key="frame" x="62" y="133" width="215" height="61"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="61" id="4u0-iL-nI3"/>
                                                         <constraint firstAttribute="width" constant="215" id="hyC-Re-ETm"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="33"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -84,7 +84,6 @@
                                         <connections>
                                             <outlet property="heroImage" destination="wZS-M4-KBh" id="CZq-Fu-eAA"/>
                                             <outlet property="heroName" destination="pHP-iz-Dva" id="FLK-xA-tVj"/>
-                                            <segue destination="53a-rZ-QzX" kind="show" identifier="showDetail" id="11A-ng-TLR"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -114,6 +113,7 @@
                     <navigationItem key="navigationItem" id="cLG-fs-p6D"/>
                     <connections>
                         <outlet property="collectionView" destination="7wD-7z-hnS" id="ZMS-ba-aW4"/>
+                        <segue destination="53a-rZ-QzX" kind="show" identifier="showDetail" id="qSu-PA-fOJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -136,10 +136,10 @@
                                         <rect key="frame" x="43" y="8" width="256" height="144"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mage Bane" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRe-eo-1FE">
-                                        <rect key="frame" x="72" y="160" width="145" height="45"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mage Bane" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRe-eo-1FE">
+                                        <rect key="frame" x="43" y="160" width="174" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -248,10 +248,15 @@
                         <color key="backgroundColor" red="0.94509803921568625" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="Aco-UD-OmN"/>
                     </view>
+                    <connections>
+                        <outlet property="heroImage" destination="LSy-ws-W5u" id="XWN-F8-kO9"/>
+                        <outlet property="heroName" destination="pRe-eo-1FE" id="geI-PX-lhH"/>
+                        <outlet property="heroType" destination="3RU-i6-zKU" id="bDh-yv-UGK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h6C-X0-OyB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1325.5999999999999" y="71.514242878560722"/>
+            <point key="canvasLocation" x="1548" y="71.514242878560722"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="b1N-1l-T5k">

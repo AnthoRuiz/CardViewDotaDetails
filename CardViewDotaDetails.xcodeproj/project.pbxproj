@@ -16,6 +16,7 @@
 		2B1764DA20681285007D8B64 /* HeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1764D920681285007D8B64 /* HeroViewController.swift */; };
 		2B1764DD20683401007D8B64 /* HeroStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1764DC20683401007D8B64 /* HeroStats.swift */; };
 		2B1764E3206845D7007D8B64 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1764E2206845D7007D8B64 /* CollectionViewCell.swift */; };
+		2BA709BB2069198500963B95 /* UICollectionViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA709BA2069198500963B95 /* UICollectionViewExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		2B1764D920681285007D8B64 /* HeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewController.swift; sourceTree = "<group>"; };
 		2B1764DC20683401007D8B64 /* HeroStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroStats.swift; sourceTree = "<group>"; };
 		2B1764E2206845D7007D8B64 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		2BA709BA2069198500963B95 /* UICollectionViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExt.swift; sourceTree = "<group>"; };
 		A97E324672C1DCCC23B955FF /* Pods-CardViewDotaDetails.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardViewDotaDetails.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardViewDotaDetails/Pods-CardViewDotaDetails.release.xcconfig"; sourceTree = "<group>"; };
 		AF391726D47F746A8E672EB2 /* Pods-CardViewDotaDetails.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardViewDotaDetails.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardViewDotaDetails/Pods-CardViewDotaDetails.debug.xcconfig"; sourceTree = "<group>"; };
 		FB63EBFC14018E5E5A45981B /* Pods_CardViewDotaDetails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardViewDotaDetails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +110,7 @@
 		2B1764E420684722007D8B64 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2BA709BA2069198500963B95 /* UICollectionViewExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				2B1764C52067F23A007D8B64 /* AppDelegate.swift in Sources */,
 				2B1764DA20681285007D8B64 /* HeroViewController.swift in Sources */,
 				2B1764D82067FD93007D8B64 /* HomeViewController.swift in Sources */,
+				2BA709BB2069198500963B95 /* UICollectionViewExt.swift in Sources */,
 				2B1764DD20683401007D8B64 /* HeroStats.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,28 +8,40 @@
 
 import UIKit
 
-class HeroViewController: UIViewController {
 
+
+class HeroViewController: UIViewController {
+   @IBOutlet weak var heroName: UILabel!
+   
+   @IBOutlet weak var heroType: UIImageView!
+   @IBOutlet weak var heroImage: UIImageView!
+   
+   
+   var hero: HeroStats?
+   
+   func heroType(hero: HeroStats) {
+      if hero.attack_type == "Melee"{
+         self.heroType.image = UIImage(named:"swords")
+      }else{
+         self.heroType.image = UIImage(named:"bow")
+      }
+   }
+   func heroImage(hero: HeroStats) {
+      let urlString = "https://api.opendota.com" + (hero.img)
+      let url = URL(string: urlString)
+      self.heroImage.sd_setImage(with: url, completed: nil)
+   }
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+      //Info Gerenal
+      heroImage(hero: hero!)
+      self.heroName.text = hero?.localized_name.capitalized
+      heroType(hero: hero!)
+      
+
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

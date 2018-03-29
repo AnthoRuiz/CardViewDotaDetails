@@ -13,10 +13,10 @@ import SDWebImage
 class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
 
    
+   let collectionViewCell = CollectionViewCell()
    @IBOutlet weak var collectionView: UICollectionView!
    
    var heroes = [HeroStats]()
-   let locationName = ["Hawaii Resort", "Mountain Expedition", "Scuba Diving"]
 
    //splash screen
    let revealingSplashScreen = RevealingSplashView(iconImage: UIImage(named:"dotaIcon")!, iconInitialSize: CGSize(width:80, height:80), backgroundColor: UIColor.white)
@@ -37,15 +37,60 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
       let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
       cell.heroName.text = self.heroes[indexPath.row].localized_name.capitalized
       cell.heroImage.sd_setImage(with: url, completed: nil)
+      cell.shadow()
       return cell
    }
+   
+   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+      performSegue(withIdentifier: "showDetail", sender: self)
+   }
+   
+   
+   
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      if let destination = segue.destination as? HeroViewController{
+         //print(heroes[collectionView.indexPathsForSelectedItems!.last!.item])
+         destination.hero = heroes[collectionView.indexPathsForSelectedItems!.last!.item]
+      }
+   }
+   
+   
+//   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//      if let destination = segue.destination as? HeroViewController{
+//
+//         destination.hero = heroes[(collectionView.)]
+//      }
+//   }
+   
+   
+//   if let cell = sender as? UICollectionViewCell,
+//   let indexPath = self.collectionView.indexPath(for: cell) {
+//
+//      let vc = segue.destination as! SecondViewController //Cast with your DestinationController
+//      //Now simply set the title property of vc
+//      vc.title = items[indexPath.row] as String
+//   }
+//   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//      if let destination = segue.destination as? HeroViewController{
+//         destination.hero = heroes[(collectionView.indexPathsForSelectedItems)]
+//      }
+//   }
+   
+   //      if let cell = sender as? UICollectionViewCell{
+   //      let indexPath = self.collectionView.indexPath(for: cell)
+   //         let dest = segue.destination as! HeroViewController
+   //         print("heroes")
+   //         print(self.heroes)
+   //         dest.hero = self.heroes[(indexPath?.row)!]
+   //      }
+
    
    
    override func viewDidLoad() {
       super.viewDidLoad()
       //add splas screen
       self.splash()
-      collectionView.dataSource = self
+
       let url = URL(string: "https://api.opendota.com/api/herostats")
       URLSession.shared.dataTask(with: url!) { (data, response, error) in
          if error == nil {
@@ -59,6 +104,8 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
             }
          }
          }.resume()
+      collectionView.dataSource = self
+      collectionView.delegate = self
       
    }
    
