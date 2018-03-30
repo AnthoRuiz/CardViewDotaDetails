@@ -1,5 +1,5 @@
 # CardViewDotaDetails
-CardView using Swift 4 for show Detail of Dota 2
+CollectionView using Swift 4 for show Detail of Dota 2
 
 # Functionality
 - Example CollectionView
