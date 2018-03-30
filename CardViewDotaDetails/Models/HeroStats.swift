@@ -16,7 +16,7 @@ struct HeroStats: Decodable {
    let base_mana: Int
    let base_armor: Float
    let img: String
-   let roles = [String]()
+   var roles =  [String]()
    let move_speed: Int
    let base_attack_min: Int
    let base_attack_max: Int

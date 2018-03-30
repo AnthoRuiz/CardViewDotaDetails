@@ -51,39 +51,10 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
       if let destination = segue.destination as? HeroViewController{
          //print(heroes[collectionView.indexPathsForSelectedItems!.last!.item])
          destination.hero = heroes[collectionView.indexPathsForSelectedItems!.last!.item]
+         //print(heroes[collectionView.indexPathsForSelectedItems!.last!.item].roles)
       }
    }
    
-   
-//   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//      if let destination = segue.destination as? HeroViewController{
-//
-//         destination.hero = heroes[(collectionView.)]
-//      }
-//   }
-   
-   
-//   if let cell = sender as? UICollectionViewCell,
-//   let indexPath = self.collectionView.indexPath(for: cell) {
-//
-//      let vc = segue.destination as! SecondViewController //Cast with your DestinationController
-//      //Now simply set the title property of vc
-//      vc.title = items[indexPath.row] as String
-//   }
-//   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//      if let destination = segue.destination as? HeroViewController{
-//         destination.hero = heroes[(collectionView.indexPathsForSelectedItems)]
-//      }
-//   }
-   
-   //      if let cell = sender as? UICollectionViewCell{
-   //      let indexPath = self.collectionView.indexPath(for: cell)
-   //         let dest = segue.destination as! HeroViewController
-   //         print("heroes")
-   //         print(self.heroes)
-   //         dest.hero = self.heroes[(indexPath?.row)!]
-   //      }
-
    
    
    override func viewDidLoad() {
